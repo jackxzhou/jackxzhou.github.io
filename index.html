@@ -1,19 +1,19 @@
 ---
 layout: default
-title: blog, notes, and life.
+title: blogs, notes, and lifes.
 ---
 
 <div id="home">
   <h1> <i class="fa fa-bookmark"></i>Blog Posts</h1>
   
-  <h2><i class="fa fa-pagelines"></i>Tech Posts</h2>
+  <h2><i class="fa fa-pagelines"></i> Tech  Posts</h2>
   <ul id="tech-posts" class="posts">
     {% for post in site.categories.tech %}
         <li><span>{{ post.date | date_to_string }} &raquo;</span><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 
-  <h2><i class="fa fa-pagelines"></i> Life Posts</h2>
+  <h2><i class="fa fa-pagelines"></i> Life  Posts</h2>
   <ul id="life-posts" class="posts">
     {% for post in site.categories.life %}
        <li><span>{{ post.date | date_to_string }} &raquo;</span><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></li>
